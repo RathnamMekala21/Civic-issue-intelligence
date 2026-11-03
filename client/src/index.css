@@ -1,0 +1,214 @@
+@import "leaflet/dist/leaflet.css";
+
+:root {
+  --bg-main: #070d1c;
+  --bg-card: #0e172a;
+  --bg-card-sub: #131f38;
+  --bg-modal: #0a1020;
+  --text-primary: #f0f6ff;
+  --text-secondary: #8899bb;
+  --teal: #0d9488;
+  --teal-glow: #14b8a6;
+  --teal-light: rgba(20, 184, 166, 0.12);
+  --gold: #f59e0b;
+  --gold-light: rgba(245, 158, 11, 0.12);
+  --red: #ef4444;
+  --green: #10b981;
+  --blue: #38bdf8;
+  --purple: #a78bfa;
+  --border: #1e2f4a;
+  --border-glow: rgba(20, 184, 166, 0.5);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background: var(--bg-main);
+  color: var(--text-primary);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Modal styles */
+.auth-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(4, 8, 18, 0.96);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.auth-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border-glow);
+  border-radius: 18px;
+  width: 100%;
+  max-width: 440px;
+  padding: 34px;
+  box-shadow: 0 0 60px rgba(20, 184, 166, 0.2);
+  animation: authIn 0.35s ease-out;
+}
+
+@keyframes authIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Card components */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 22px;
+  margin-bottom: 18px;
+  transition: border-color 0.2s;
+}
+
+.card:hover {
+  border-color: #2a3f5f;
+}
+
+.card-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--teal-glow);
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Badges */
+.badge {
+  padding: 4px 11px;
+  border-radius: 20px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.badge-critical {
+  background: rgba(239, 68, 68, 0.15);
+  color: var(--red);
+  border: 1px solid rgba(239, 68, 68, 0.4);
+}
+
+.badge-high {
+  background: rgba(245, 158, 11, 0.15);
+  color: var(--gold);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+}
+
+.badge-medium {
+  background: rgba(56, 189, 248, 0.15);
+  color: var(--blue);
+  border: 1px solid rgba(56, 189, 248, 0.4);
+}
+
+.badge-resolved {
+  background: rgba(16, 185, 129, 0.15);
+  color: var(--green);
+  border: 1px solid rgba(16, 185, 129, 0.4);
+}
+
+/* Form inputs */
+input, select, textarea {
+  width: 100%;
+  padding: 11px 13px;
+  background: rgba(10, 18, 36, 0.9);
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  color: white;
+  font-size: 0.9rem;
+  transition: border 0.2s;
+  outline: none;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--teal-glow);
+  box-shadow: 0 0 0 2px rgba(20, 184, 166, 0.15);
+}
+
+/* Ticket cards */
+.ticket-card {
+  background: var(--bg-card-sub);
+  border: 1px solid var(--border);
+  border-radius: 11px;
+  padding: 16px;
+  margin-bottom: 13px;
+  transition: border-color 0.2s, transform 0.15s;
+}
+
+.ticket-card:hover {
+  border-color: #2a3f5f;
+  transform: translateX(2px);
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.86rem;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 11px 13px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+th {
+  background: rgba(13, 148, 136, 0.12);
+  color: var(--teal-glow);
+  font-weight: 700;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+tr:hover td {
+  background: rgba(20, 184, 166, 0.03);
+}
+
+/* Spinner */
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--border);
+  border-top-color: var(--teal-glow);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  from { transform: scale(1); }
+  to { transform: scale(1.12); box-shadow: 0 0 20px rgba(239, 68, 68, 0.8); }
+}
+
+.mic-recording {
+  animation: pulse 0.8s infinite alternate;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "civic-issue-intelligence",
+  "version": "2.0.0",
+  "description": "Civic Issue Intelligence & Automated Resolution Platform — React + Node/Express + PostgreSQL + AI Engine",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "node server/server.js",
+    "client": "npm run dev --prefix client",
+    "build": "npm run build --prefix client"
+  },
+  "keywords": [
+    "react",
+    "express",
+    "nodejs",
+    "postgresql",
+    "yolov8",
+    "ssim",
+    "civic-intelligence"
+  ],
+  "author": "Dharmajigudem Gram Panchayat Team",
+  "license": "ISC"
+}

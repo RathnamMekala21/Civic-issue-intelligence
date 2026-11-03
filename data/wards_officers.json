@@ -1,0 +1,109 @@
+{
+  "city_name": "Metro Smart City",
+  "wards": [
+    {
+      "ward_id": 1,
+      "ward_name": "North Zone - Ward 1 (Central Circle)",
+      "center_lat": 12.9716,
+      "center_lon": 77.5946,
+      "radius_km": 2.5,
+      "departments": {
+        "Roads": {
+          "department_name": "Roads & Highway Maintenance",
+          "officer_name": "Rajesh Kumar",
+          "designation": "Assistant Executive Engineer (Roads)",
+          "phone": "+91-9876543210",
+          "email": "road_officer_ward1@citygov.in"
+        },
+        "Garbage": {
+          "department_name": "Solid Waste Management",
+          "officer_name": "Suresh Patel",
+          "designation": "Chief Health Inspector",
+          "phone": "+91-9876543211",
+          "email": "garbage_officer_ward1@citygov.in"
+        },
+        "Water": {
+          "department_name": "Water Supply & Sewerage Board",
+          "officer_name": "Ananya Sen",
+          "designation": "Sub-Divisional Engineer (Water)",
+          "phone": "+91-9876543212",
+          "email": "water_officer_ward1@citygov.in"
+        },
+        "Electrical": {
+          "department_name": "Electrical & Street Lighting",
+          "officer_name": "Venkatesh Rao",
+          "designation": "Junior Engineer (Electrical)",
+          "phone": "+91-9876543213",
+          "email": "electrical_officer_ward1@citygov.in"
+        },
+        "Public Safety": {
+          "department_name": "Stormwater & Public Safety",
+          "officer_name": "Vikram Singh",
+          "designation": "Disaster Management Officer",
+          "phone": "+91-9876543214",
+          "email": "safety_officer_ward1@citygov.in"
+        }
+      }
+    },
+    {
+      "ward_id": 2,
+      "ward_name": "South Zone - Ward 2 (Tech Corridor)",
+      "center_lat": 12.9352,
+      "center_lon": 77.6245,
+      "radius_km": 3.0,
+      "departments": {
+        "Roads": {
+          "department_name": "Roads & Infrastructure",
+          "officer_name": "Pooja Hegde",
+          "designation": "Executive Engineer (Roads)",
+          "phone": "+91-9876543220",
+          "email": "road_officer_ward2@citygov.in"
+        },
+        "Garbage": {
+          "department_name": "Sanitation & Bio-Waste",
+          "officer_name": "Amitabh Roy",
+          "designation": "Senior Sanitation Officer",
+          "phone": "+91-9876543221",
+          "email": "garbage_officer_ward2@citygov.in"
+        },
+        "Water": {
+          "department_name": "Water Works Department",
+          "officer_name": "Mohammad Ali",
+          "designation": "Assistant Engineer (Pipes)",
+          "phone": "+91-9876543222",
+          "email": "water_officer_ward2@citygov.in"
+        },
+        "Electrical": {
+          "department_name": "Urban Power & Lighting",
+          "officer_name": "Kavita Reddy",
+          "designation": "Assistant Engineer (Lighting)",
+          "phone": "+91-9876543223",
+          "email": "electrical_officer_ward2@citygov.in"
+        }
+      }
+    },
+    {
+      "ward_id": 3,
+      "ward_name": "East Zone - Ward 3 (Old Town)",
+      "center_lat": 12.9815,
+      "center_lon": 77.6412,
+      "radius_km": 2.0,
+      "departments": {
+        "Roads": {
+          "department_name": "Municipal Roads Board",
+          "officer_name": "Deepak Verma",
+          "designation": "Ward Engineer (Roads)",
+          "phone": "+91-9876543230",
+          "email": "road_officer_ward3@citygov.in"
+        },
+        "Garbage": {
+          "department_name": "Civic Sanitation Bureau",
+          "officer_name": "Sunita Menon",
+          "designation": "Sanitation Inspector",
+          "phone": "+91-9876543231",
+          "email": "garbage_officer_ward3@citygov.in"
+        }
+      }
+    }
+  ]
+}
