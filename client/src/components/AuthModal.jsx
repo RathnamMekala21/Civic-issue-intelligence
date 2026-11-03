@@ -138,7 +138,7 @@ export default function AuthModal({
         <div className="text-center mb-5">
           <div className="text-3xl mb-1.5">🏛️</div>
           <h1 className="text-xl font-extrabold text-[#14b8a6] tracking-tight">Civic Issue Intelligence</h1>
-          <p className="text-xs text-[#8899bb] mt-1">Dharmajigudem Gram Panchayat • Linapalem, West Godavari</p>
+          <p className="text-xs text-[#8899bb] mt-1">Dharmajigudem Gram Panchayat • Lingapalem, West Godavari</p>
         </div>
 
         {/* Role Restriction Banner if accessing restricted dashboard */}
@@ -259,23 +259,6 @@ export default function AuthModal({
                 {error}
               </div>
             )}
-
-            {/* Quick Demo Credentials hint for reference */}
-            <div className="mt-4 pt-3 border-t border-[#1e2f4a] text-xs text-[#8899bb] space-y-1">
-              <div className="font-semibold text-[#38bdf8] mb-1">Demo Access Credentials (for testing):</div>
-              <div className="flex justify-between text-[11px]">
-                <span>👷 Ward Officer:</span>
-                <span className="font-mono text-white">ward1@dgm.gov.in / ward123</span>
-              </div>
-              <div className="flex justify-between text-[11px]">
-                <span>🏛️ Secretary:</span>
-                <span className="font-mono text-white">secretary@dgm.gov.in / admin123</span>
-              </div>
-              <div className="flex justify-between text-[11px]">
-                <span>👤 Citizen:</span>
-                <span className="font-mono text-white">9848012345 / 1234</span>
-              </div>
-            </div>
           </form>
         ) : (
           <form onSubmit={handleRegister} className="space-y-3.5">
@@ -332,7 +315,7 @@ export default function AuthModal({
                 onChange={(e) => setRegPanchayat(e.target.value)}
                 className="w-full text-xs py-2 px-3 bg-[#131f38] border border-[#1e2f4a] rounded-lg text-white"
               >
-                <option value="1">Dharmajigudem Gram Panchayat (Linapalem Mandal)</option>
+                <option value="1">Dharmajigudem Gram Panchayat (Lingapalem Mandal)</option>
               </select>
             </div>
 

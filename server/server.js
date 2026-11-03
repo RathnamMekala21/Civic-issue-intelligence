@@ -528,7 +528,7 @@ const handleGetStats = async (req, res) => {
 
     return res.json({
       panchayat_name: panchayat ? panchayat.name : 'Dharmajigudem Gram Panchayat',
-      mandal: panchayat ? panchayat.mandal : 'Linapalem',
+      mandal: panchayat ? panchayat.mandal : 'Lingapalem',
       district: panchayat ? panchayat.district : 'West Godavari',
       total_issues: total,
       resolved_issues: resolved,

@@ -175,7 +175,7 @@ export default function App() {
       </main>
 
       <footer className="text-center py-4 border-t border-[#1e2f4a] text-xs text-[#8899bb] bg-[#060c1a]">
-        Civic Issue Intelligence &amp; Automated Resolution System • Dharmajigudem Gram Panchayat (Linapalem Mandal, West Godavari)
+        Civic Issue Intelligence &amp; Automated Resolution System • Dharmajigudem Gram Panchayat (Lingapalem Mandal, West Godavari)
       </footer>
     </div>
   );

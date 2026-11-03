@@ -1,5 +1,5 @@
 # 🏛️ Civic Issue Intelligence & Automated Resolution Platform
-> **Pilot Implementation:** Dharmajigudem Gram Panchayat • Linapalem Mandal, West Godavari District
+> **Pilot Implementation:** Dharmajigudem Gram Panchayat • Lingapalem Mandal, West Godavari District
 
 An AI-driven, multi-modal civic grievance management platform designed to automate defect identification, suppress duplicate complaints, intelligently route tasks to local ward sachivalayam officers, and computationally verify field repairs.
 

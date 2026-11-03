@@ -14,7 +14,7 @@ export default function Navbar({ user, activeTab, onTabChange, onLogout, stats }
 
           <div className="text-xs text-[#f59e0b] bg-[rgba(245,158,11,0.1)] border border-[rgba(245,158,11,0.3)] px-3 py-1 rounded-full font-semibold flex items-center gap-1.5 shadow-sm">
             <span>📍</span>
-            <span>{stats?.panchayat_name || 'Dharmajigudem Gram Panchayat'} • {stats?.mandal || 'Linapalem'} Mandal, {stats?.district || 'West Godavari'}</span>
+            <span>{stats?.panchayat_name || 'Dharmajigudem Gram Panchayat'} • {stats?.mandal || 'Lingapalem'} Mandal, {stats?.district || 'West Godavari'}</span>
           </div>
         </div>
 
